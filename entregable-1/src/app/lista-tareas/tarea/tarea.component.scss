@@ -1,0 +1,29 @@
+li{
+  display: flex;
+  list-style-type: none;
+  border: 1px solid #000000;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0.5%;
+  margin: 1%;
+}
+
+button{
+  background-color: white;
+  border: none;
+  transition: 0.7s;
+  border-radius: 3px;
+}
+
+button:hover{
+  background-color:rgb(159, 159, 159);
+  transition: 0.7s;
+}
+
+p{
+  margin: 1%;
+}
+
+input[type="checkbox"]:checked + p{
+  text-decoration: line-through;
+}
