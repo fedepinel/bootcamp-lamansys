@@ -1,4 +1,4 @@
-export interface tarea{
+export interface Tarea{
   nombre: string;
-  id: number;
+  completada: boolean;
 }

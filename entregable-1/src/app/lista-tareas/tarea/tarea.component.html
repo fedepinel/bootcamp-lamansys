@@ -1,7 +1,7 @@
-<li>
-  <input type="checkbox" title="checkbox">
+<li [ngClass]="{tachado:nombre.completada}">
+  <input type="checkbox" title="checkbox" (change)="tachar()">
   <p>{{nombre.nombre}}</p>
-  <button type="button">
+  <button type="button" (click)="borrarTarea()">
     <mat-icon>delete</mat-icon>
   </button>
 </li>

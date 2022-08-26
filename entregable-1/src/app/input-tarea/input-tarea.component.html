@@ -1,4 +1,4 @@
 <form action="">
-  <input type="text" id="input-tarea" placeholder="Agregar Tarea">
-  <button type="submit">Agregar</button>
+  <input type="text" id="input-tarea" placeholder="Agregar Tarea" [(ngModel)]="nuevaTarea" name="nueva tarea">
+  <button type="button" (click)="addTarea()">Agregar</button>
 </form>

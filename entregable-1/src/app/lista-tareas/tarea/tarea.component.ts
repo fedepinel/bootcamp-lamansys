@@ -1,5 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { tarea } from '../tarea';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { AppComponent } from 'src/app/app.component';
+import { Tarea } from '../Tarea';
 
 @Component({
   selector: 'app-tarea',
@@ -9,7 +10,16 @@ import { tarea } from '../tarea';
 
 
 export class TareaComponent implements OnInit {
-  @Input() nombre!:tarea;
+  @Input() nombre!:Tarea;
+  @Output() tareaBorrar = new EventEmitter<string>();
+
+  borrarTarea(){
+    this.tareaBorrar.emit(this.nombre.nombre);
+  }
+
+  tachar(){
+    this.nombre.completada = !this.nombre.completada;
+  }
 
   constructor() { }
 

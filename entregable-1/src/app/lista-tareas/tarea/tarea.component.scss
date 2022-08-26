@@ -24,6 +24,6 @@ p{
   margin: 1%;
 }
 
-input[type="checkbox"]:checked + p{
+.tachado{
   text-decoration: line-through;
 }

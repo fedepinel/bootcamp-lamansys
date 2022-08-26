@@ -1,3 +1,3 @@
 <h1>Lista de tareas de {{user}}</h1>
-<app-input-tarea></app-input-tarea>
-<app-lista-tareas></app-lista-tareas>
+<app-input-tarea (tareaNueva)="saveTarea($event)"></app-input-tarea>
+<app-lista-tareas [tareas]="tareas" (tareaBorrar)="borrarTarea($event)"></app-lista-tareas>

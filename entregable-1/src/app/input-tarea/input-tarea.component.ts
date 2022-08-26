@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { ListaTareasComponent } from '../lista-tareas/lista-tareas.component';
 
 @Component({
   selector: 'app-input-tarea',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputTareaComponent implements OnInit {
 
+  @Output() tareaNueva = new EventEmitter<string>();
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  nuevaTarea: string = '';
+
+  addTarea(): void{
+    if(this.nuevaTarea){
+      this.tareaNueva.emit(this.nuevaTarea);
+      this.nuevaTarea = '';
+    }
+  }
 }

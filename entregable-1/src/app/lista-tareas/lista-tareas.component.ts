@@ -1,31 +1,18 @@
-import { Component, OnInit } from '@angular/core';
-import { tarea } from './tarea';
+import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
+import { Tarea } from './Tarea';
 
 @Component({
   selector: 'app-lista-tareas',
   templateUrl: './lista-tareas.component.html',
   styleUrls: ['./lista-tareas.component.scss']
 })
-export class ListaTareasComponent implements OnInit {
+export class ListaTareasComponent implements OnInit{
+  @Input() tareas!:Tarea[];
+  @Output() tareaBorrar = new EventEmitter<string>();
 
-  tareas:tarea[] = [
-    {
-      nombre:"Tarea 1",
-      id:1
-    },
-    {
-      nombre:"Tarea 2",
-      id:2
-    },
-    {
-      nombre:"Tarea 3",
-      id:3
-    },
-    {
-      nombre:"Tarea 4",
-      id:4
-    }
-  ];
+  borrarTarea(tarea:string){
+    this.tareaBorrar.emit(tarea);
+  }
 
   constructor() { }
 

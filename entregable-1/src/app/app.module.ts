@@ -10,6 +10,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import {MatIconModule} from '@angular/material/icon';
 
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +25,7 @@ import {MatIconModule} from '@angular/material/icon';
     BrowserAnimationsModule,
     MatSliderModule,
     MatIconModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
