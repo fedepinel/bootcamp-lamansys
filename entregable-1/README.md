@@ -1,6 +1,6 @@
-# Entregable 2
+# Entregable 3
 
-Se complementaron el entregable 1 y el entregable 2.
+Se complementaron el entregable,el entregable 2 y el entregable 3.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
 
