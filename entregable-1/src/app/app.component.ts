@@ -12,7 +12,27 @@ export class AppComponent {
 
   tareas:Tarea[] = [
     {
-      nombre:"Tarea de prueba",
+      nombre:"Tarea 1",
+      completada: false
+    },
+    {
+      nombre:"Tarea 2",
+      completada: false
+    },
+    {
+      nombre:"Tarea 3",
+      completada: false
+    },
+    {
+      nombre:"Tarea 4",
+      completada: false
+    },
+    {
+      nombre:"Tarea 5",
+      completada: false
+    },
+    {
+      nombre:"Tarea 6",
       completada: false
     }
   ];

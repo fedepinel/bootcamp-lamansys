@@ -1,9 +1,49 @@
-*{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+@import '../app/estilos/variables';
+
+.contenedor{
   display: flex;
-  justify-content: center;
+  font-family: $font;
+  flex-direction: column;
+  width: 640px;
+  margin: auto;
+
+  > app-input-tarea{
+    display: flex;
+    width: inherit;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 24px;
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+  }
+
+  > app-lista-tareas{
+    display: flex;
+    width: inherit;
+  }
+
+  > hr{
+    border: 2px solid $negro10;
+    width: inherit;
+  }
 }
 
 h1{
-  margin: 1%;
+  margin: 16px 0;
+  font-size: 36px;
+  color: $negro;
+  font-family: $font;
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+
+  .contenedor{
+    width: 100%;
+  }
+
+  h1{
+    font-size: 28px;
+  }
+
 }

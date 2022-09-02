@@ -21,6 +21,12 @@ export class TareaComponent implements OnInit {
     this.nombre.completada = !this.nombre.completada;
   }
 
+  compartirTarea(){
+  }
+
+  copiarTarea(){
+  }
+
   constructor() { }
 
   ngOnInit(): void {

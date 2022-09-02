@@ -1,7 +1,17 @@
 <li [ngClass]="{tachado:nombre.completada}">
-  <input type="checkbox" title="checkbox" (change)="tachar()">
-  <p>{{nombre.nombre}}</p>
-  <button type="button" (click)="borrarTarea()">
-    <mat-icon>delete</mat-icon>
-  </button>
+  <div class="check-tarea">
+    <input type="checkbox" title="checkbox" (change)="tachar()">
+    <p>{{nombre.nombre}}</p>
+  </div>
+  <div class="botones">
+    <button type="button" (click)="copiarTarea()">
+      <mat-icon>content_paste</mat-icon>
+    </button>
+    <button type="button" (click)="compartirTarea()">
+      <mat-icon>share</mat-icon>
+    </button>
+    <button type="button" (click)="borrarTarea()">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </div>
 </li>
