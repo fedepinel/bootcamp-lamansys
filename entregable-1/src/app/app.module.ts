@@ -11,13 +11,15 @@ import { MatSliderModule } from '@angular/material/slider';
 import {MatIconModule} from '@angular/material/icon';
 
 import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InputTareaComponent,
     ListaTareasComponent,
-    TareaComponent
+    TareaComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

@@ -8,7 +8,6 @@ import { Tarea } from './lista-tareas/Tarea';
 })
 export class AppComponent {
   title = 'entregable-1';
-  user = 'Fede';
 
   tareas:Tarea[] = [
     {

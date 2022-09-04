@@ -1,0 +1,21 @@
+@import '../estilos/variables';
+
+h1{
+  margin: 16px 0;
+  font-size: 36px;
+  color: $negro;
+  font-family: $font;
+  text-align: center;
+}
+
+button{
+  height: 48px;
+  width: 48px;
+  background-color: $transparente;
+  border: 1px solid $negro;
+  transition: 0.7s;
+  border-radius: 4px;
+  margin: 8px;
+  padding: 8px;
+  cursor: pointer;
+}

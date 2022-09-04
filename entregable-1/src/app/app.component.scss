@@ -22,18 +22,16 @@
     width: inherit;
   }
 
+  > app-header{
+    display: flex;
+    justify-content: space-between;
+    width: inherit;
+  }
+
   > hr{
     border: 2px solid $negro10;
     width: inherit;
   }
-}
-
-h1{
-  margin: 16px 0;
-  font-size: 36px;
-  color: $negro;
-  font-family: $font;
-  text-align: center;
 }
 
 @media screen and (max-width: 576px) {

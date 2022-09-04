@@ -1,5 +1,5 @@
 <div class="contenedor">
-  <h1>Lista de tareas de {{user}}</h1>
+  <app-header></app-header>
   <app-input-tarea (tareaNueva)="saveTarea($event)"></app-input-tarea>
   <hr>
   <app-lista-tareas [tareas]="tareas" (tareaBorrar)="borrarTarea($event)"></app-lista-tareas>
