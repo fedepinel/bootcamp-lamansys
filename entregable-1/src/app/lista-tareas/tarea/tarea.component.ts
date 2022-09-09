@@ -23,23 +23,21 @@ export class TareaComponent implements OnInit {
 
   //En proceso
   compartirTarea(){
-    let newVariable: any;
-    newVariable = window.navigator;
+    let navegador = window.navigator;
 
-    if (newVariable && newVariable.share) {
-      newVariable.share({
+    if (navegador && navegador.share) {
+      navegador.share({
         title: 'Tarea: ' + this.nombre.nombre,
         text: this.nombre.nombre,
-        url: 'https://google.com//',
+        url: 'https://fedepinel.github.io/bootcamp-lamansys/',
       })
-    }else {
-      console.log('No anda');
     }
   }
 
-  //Andan las dos, investigar que hace bien la segunda
   copiarTarea(){
-    console.log(window.navigator['clipboard'].writeText(this.nombre.nombre));
+    window.navigator['clipboard'].writeText(this.nombre.nombre);
+
+    //Otro modo de hacerlo
     //console.log(navigator.clipboard.writeText(this.nombre.nombre).then().catch(e => console.error(e)))
   }
 
